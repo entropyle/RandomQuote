@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(121, 69, 131);
+  color: #181818;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  overflow: hidden;
+}
+
+#container {
+  display: grid;
+  width: 50%;
+  max-width: 600px;
+  min-width: 400px;
+  min-height: 250px;
+  margin: auto;
+  padding: 5px;
+  border: 3px solid #181818;
+  border-radius: 10px;
+  background-color: rgba(201, 109, 24, 0.7);
+}
+
+#quote {
+  font-size: 2em;
+}
+
+#author {
+  font-weight: bold;
+  text-align: right;
+  align-self: end;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button button {
+  width: 110px;
+  height: 25px;
+}
+
+#btn-tweet {
+  justify-self: start;
+  align-self: end;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  text-decoration: none;
+  color: initial;
+}
+
+#btn-quote {
+  justify-self: end;
+  align-self: end;
+}
